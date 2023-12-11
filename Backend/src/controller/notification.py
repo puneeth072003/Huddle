@@ -3,6 +3,7 @@ from email.mime.text import MIMEText
 import sys
 
 def send_notification(arguments):
+    print(arguments)
     meetName=arguments[0]
     email=arguments[1]
     date=arguments[2]
@@ -57,4 +58,5 @@ Huddle
 
 if __name__ == "__main__":
     arguments = sys.argv[1:]
+    print(arguments)
     send_notification(arguments)

@@ -97,17 +97,25 @@ const Schedules = () => {
     });
     setOpen(true);
   };
-
+  
+  window.eventFollowUp = modalInfo.description;
+  
   const handleClose = () => setOpen(false);
 
   const handleButtonClose = () => {
-
-    const left = (window.innerWidth - 600)/2;
-    const top = (window.innerHeight - 500)/2;
-    const link = modalInfo.Link==='No such Link is provided'?"https://meet.google.com/wxf-mkfb-pnt": modalInfo.Link
-    window.open(`${link}`, 'Popup', `width=600,height=500,left=${left}, top=${top}`)
+    const left = (window.innerWidth - 600) / 2;
+    const top = (window.innerHeight - 500) / 2;
+    const link =
+      modalInfo.Link === "No such Link is provided"
+        ? "https://meet.google.com/wxf-mkfb-pnt"
+        : modalInfo.Link;
+    window.open(
+      `${link}`,
+      "Popup",
+      `width=600,height=500,left=${left}, top=${top}`
+    );
     setOpen(false);
-  }
+  };
 
   return (
     <>
@@ -269,7 +277,11 @@ const Schedules = () => {
               <h2 className="text-[#ff007a] text-[1.2rem] font-['Cairo']">
                 Meeting Link:{" "}
               </h2>
-              <h2 className="text-[1.2rem] font-['Cairo']">{modalInfo.Link==='No such Link is provided'?"https://meet.google.com/wxf-mkfb-pnt": modalInfo.Link}</h2>
+              <h2 className="text-[1.2rem] font-['Cairo']">
+                {modalInfo.Link === "No such Link is provided"
+                  ? "https://meet.google.com/wxf-mkfb-pnt"
+                  : modalInfo.Link}
+              </h2>
             </div>
             <div className="flex justify-center items-center gap-[0.5rem]">
               <h2 className="text-[#ff007a] text-[1.2rem] font-['Cairo']">

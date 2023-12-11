@@ -32,17 +32,18 @@ const fetchAccessToken = async (code) => {
   }
 };
 
-const writeEvent = (req, res) => {
+const writeEvent = async (req, res) => {
   const data = req.body;
   const accessToken = global.access_token_calendar;
-  const calendarId = "primary"; // Use 'primary' for the primary calendar
+  const calendarId = "primary";
   const eventSummary = data.eventsName;
-  const eventStart = data.startTime; // UTC time
-  const eventEnd = data.endTime; // UTC time
-  const eventFollowUps = data.eventDesc; // UTC time
-  global.email = data.eventMail;
+  const eventStart = data.startTime;
+  const eventEnd = data.endTime;
+  const eventFollowUps = data.eventDesc;
+  const email = data.eventMail;
+  console.log(email)
 
-  createEvent(
+  await createEvent(
     accessToken,
     calendarId,
     eventSummary,

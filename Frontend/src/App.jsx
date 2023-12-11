@@ -5,6 +5,7 @@ import OffCanvas from "./components/OffCanvas";
 import Schedules from "./components/Schedules";
 import BusinessCards from "./components/BusinessCards";
 import Transcript from "./components/Transcript";
+import Keywords from "./components/Keywords";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Schedules />} />
           <Route path="features" element={<BusinessCards />} />
           <Route path="transcript" element={<Transcript />} />
+          <Route path="keywords" element={<Keywords />} />
           <Route
             path="more"
             element={

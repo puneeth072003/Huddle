@@ -6,10 +6,10 @@ const ffmpeg = require("fluent-ffmpeg");
 const F1 = (inputFilePath) => {
   return new Promise((resolve, reject) => {
     // Input file path comment below this one later
-    const inputFilePath = `C:\\Users\\HOME\\Desktop\\Projects\\Hackoverflow\\Backend\\Assets\\input.mp4`; // Replace 'input.mp4' with your input file name and path
+    const inputFilePath = `C:\\Users\\Soorya\\Code\\React\\React\\Hack-Overflow\\Backend\\Assets\\input.mp4`; // Replace 'input.mp4' with your input file name and path
 
     // Output file path
-    const outputFilePath = `C:\\Users\\HOME\\Desktop\\Projects\\Hackoverflow\\Backend\\Assets\\ExtractedAudio.wav`;
+    const outputFilePath = `C:\\Users\\Soorya\\Code\\React\\React\\Hack-Overflow\\Backend\\Assets\\ExtractedAudio.wav`;
 
     // Create a new ffmpeg command
     ffmpeg()
