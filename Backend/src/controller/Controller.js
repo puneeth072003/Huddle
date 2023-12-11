@@ -50,7 +50,7 @@ const writeEvent = async (req, res) => {
     eventStart,
     eventEnd,
     eventFollowUps,
-    email
+    global.email
   );
 };
 
