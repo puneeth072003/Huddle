@@ -63,14 +63,14 @@ export const Login = () => {
               name="username"
               id="username"
               placeholder="Enter your Email..."
-              className="px-[1rem]"
+              className="px-[1rem] w-[80%]"
             />
           </div>
           <div className="button-holder flex justify-center flex-col items-center gap-[1.5rem] flex-wrap">
             <button
               data-function="login"
               onClick={handleLogin}
-              className="font-['Cairo'] py-[0.4rem] px-[4rem] text-[1.2rem] text-[#FF007A]"
+              className="font-['Cairo'] py-[0.4rem] px-[4rem] text-[1.2rem] text-[#FF007A] w-[80%]"
             >
               LOGIN / SIGNUP
             </button>
