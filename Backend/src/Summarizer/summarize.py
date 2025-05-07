@@ -17,7 +17,7 @@ max_chunk_length = 1000  # Define the maximum length for each chunk
 chunks = []
 current_chunk = ""  # Initialize the current chunk variable
 
-with open("C:\\Users\\HOME\\Desktop\\Projects\\Hackoverflow\\Backend\\Assets\\transcribed_text.txt", 'r', encoding='utf-8') as file:
+with open("C:\\Users\\Soorya\\Code\\React\\React\\Hack-Overflow\\Backend\\Assets\\transcribed_text.txt", 'r', encoding='utf-8') as file:
     text = file.read()
     for char in text:
         if len(current_chunk) < max_chunk_length:

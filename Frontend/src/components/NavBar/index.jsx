@@ -4,7 +4,8 @@ import {
   faEllipsis,
   faCalendar,
   faSquare,
-  faScroll
+  faScroll,
+  faList
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./style.css";
@@ -36,6 +37,14 @@ const NavBar = () => {
       >
         <FontAwesomeIcon icon={faScroll} />
         Transcription
+      </NavLink>
+      <NavLink
+        className="flex justify-start items-center rounded-[14px] px-[2rem] w-[15rem] h-[3rem] bg-[#313942] text-[#fff] text-[1.3rem] font-['Cairo']"
+        to="/home/keywords"
+        end
+      >
+        <FontAwesomeIcon icon={faList} />
+        Keywords
       </NavLink>
       <NavLink
         className="flex justify-start items-center rounded-[14px] px-[2rem] w-[15rem] h-[3rem] bg-[#313942] text-[#fff] text-[1.3rem] font-['Cairo']"

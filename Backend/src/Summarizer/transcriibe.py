@@ -4,8 +4,8 @@ from pydub import AudioSegment
 import sys
 
 # Define the audio and output file paths
-audio_file_path = "C:\\Users\\HOME\\Desktop\\Projects\\Hackoverflow\\Backend\\Assets\\ExtractedAudio.wav"
-output_file_path = "C:\\Users\\HOME\\Desktop\\Projects\\Hackoverflow\\Backend\\Assets\\transcribed_text.txt"
+audio_file_path = "C:\\Users\\Soorya\\Code\\React\\React\\Hack-Overflow\\Backend\\Assets\\ExtractedAudio.wav"
+output_file_path = "C:\\Users\\Soorya\\Code\\React\\React\\Hack-Overflow\\Backend\\Assets\\transcribed_text.txt"
 
 # Initialize the Whisper model
 whisper = pipeline("automatic-speech-recognition", model="openai/whisper-base", device=-1)

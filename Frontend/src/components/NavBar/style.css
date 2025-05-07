@@ -14,10 +14,14 @@ svg[data-icon=scroll] path {
 svg[data-icon=ellipsis] path {
     fill: #fff
 }
+svg[data-icon=list] path {
+    fill: #fff
+}
 
 svg[data-icon=calendar],
 svg[data-icon=square],
 svg[data-icon=scroll],
+svg[data-icon=list],
 svg[data-icon=ellipsis] {
     margin-right: 10px;
 }

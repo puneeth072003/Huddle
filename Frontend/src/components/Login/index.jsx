@@ -33,7 +33,7 @@ export const Login = () => {
 
   return (
     <>
-    <div className="video-container">
+      <div className="video-container">
         <video autoPlay loop muted id="background-video">
           <source src="{}" type="video/mp4" />
         </video>
@@ -63,14 +63,14 @@ export const Login = () => {
               name="username"
               id="username"
               placeholder="Enter your Email..."
-              className="px-[1rem]"
+              className="px-[1rem] w-[80%]"
             />
           </div>
           <div className="button-holder flex justify-center flex-col items-center gap-[1.5rem] flex-wrap">
             <button
               data-function="login"
               onClick={handleLogin}
-              className="font-['Cairo'] py-[0.4rem] px-[4rem] text-[1.2rem] text-[#FF007A]"
+              className="font-['Cairo'] py-[0.4rem] px-[4rem] text-[1.2rem] text-[#FF007A] w-[80%]"
             >
               LOGIN / SIGNUP
             </button>
@@ -86,7 +86,8 @@ export const Login = () => {
               onClick={handleLogin}
               className="flex justify-center items-center gap-[1rem] font-['Cairo'] py-[0.5rem] px-[1.5rem] text-[1rem] text-[#ccc]"
             >
-              <GoogleIcon color="#fff" /> <span className="text-[#fff]">GOOGLE</span>
+              <GoogleIcon color="#fff" />{" "}
+              <span className="text-[#fff]">GOOGLE</span>
             </button>
           </div>
         </section>

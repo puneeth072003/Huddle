@@ -44,7 +44,7 @@ const FloatingButton = () => {
     return () => {
       recognition.stop();
     };
-  }, []);
+  });
 
   const startRecognition = () => {
     // Start speech recognition
@@ -106,10 +106,9 @@ const FloatingButton = () => {
             </h2>
             <Divider sx={{ "border-color": "#313942" }} />
           </div>
-          <div className="flex flex-col justify-center items-center gap-[2rem]">
+          <div className="h-[100%] flex flex-col justify-between items-center gap-[2rem]">
             <p className="text-justify p-[2rem]">{transcription}</p>
-
-            <div className="flex justify-center justify-self-end items-center gap-[1.5rem]">
+            <div className="flex justify-center justify-self-end self-end items-center gap-[1.5rem]">
               <button
                 className=" font-['Cairo'] py-[0.5rem] text-[1rem] rounded-[10px] bg-[#FF007A] w-[9rem] mx-[auto] mb-[2rem] text-[#000]"
                 onClick={startRecognition}
